@@ -123,7 +123,7 @@ public abstract class NeoBootstrapper implements Bootstrapper
         {
             log.error( format( "Invalid memory configuration - exceeds physical memory. Check the configured values for %s and %s",
                     GraphDatabaseSettings.pagecache_memory.name(), ExternalSettings.max_heap_size.name() ) );
-            return INVALID_CONFIGURATION_ERROR_CODE;
+            // return INVALID_CONFIGURATION_ERROR_CODE;
         }
 
         try
